@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var prefix = "!c7 "
+var prefix = "!zg"
 
 client.on('ready',() => {
   console.log("I\'m Online! Ready to launch!");
-  client.user.setActivity('!c7 help | discord.me/teamco7', { type: 'PLAYING' })
-    .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : '!c7 help | discord.gg/67gbBKH'}`))
+  client.user.setActivity('!zg help', { type: 'PLAYING' })
+    .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : '!zg help}`))
     .catch(console.error);
 })
 
