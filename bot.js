@@ -5,8 +5,8 @@ var prefix = "!zg "
 
 client.on('ready',() => {
   console.log("I\'m Online! Ready to launch!");
-  client.user.setActivity('!zg help', { type: 'PLAYING' })
-    .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : '!zg help'}`))
+  client.user.setActivity('!zg help | zg-gaming.co', { type: 'PLAYING' })
+    .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : '!zg help | zg-gaming.co'}`))
     .catch(console.error);
 })
 
