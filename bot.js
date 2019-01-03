@@ -13,13 +13,13 @@ client.on('ready',() => {
 client.on('message', message => {
   if (message.author === client.user) return;
   	if (message.content.startsWith(prefix + 'help')) {
-  		message.channel.send({embed: { "plainText": "", "title": "Bot Support", "description": "Commands: \n • !zg help - Shows this message \n • !zg servers cod4 - Displays clan & partnered servers \n • !zg about - Shows bot information ", "color": 53380 }});
+  		message.channel.send({embed: { "plainText": "", "title": "Bot Support | Zero Gravity Gaming", "description": "Commands: \n • !zg help - Shows this this message \n • !zg servers - Displays zG| Servers \n • !zg botinfo - About zG| and bot ", "color": 53380 }});
   	}
-    if (message.content.startsWith(prefix + 'servers cod4')) {
-  		message.channel.send({embed: { "plainText": "", "title": " Call of Duty 4: MW Servers", "description": "Clan: \n • TeamCo7 Clan \n Invite: https://discord.gg/TW9yC4V \n • FS| Softwares \n Invite: https://discord.gg/j39xBQa \n \n Communities: \n • GoodBoy00's Lounge \n Invite: https://discord.gg/8yyfzYY \n • PrinceRaj 592 \n Invite: https://discord.gg/rGu7F39", "color": 53380 }});
+    if (message.content.startsWith(prefix + 'servers ')) {
+  		message.channel.send({embed: { "plainText": "", "title": "zG| Global Servers", "description": "Call of Duty 4: Modern Warfare Servers: \n • zG| Sniper Online Zero Gravity - Round: 1/20 \n :flag_us: `74.91.127.206:28961` \n • zG| ProMod 2.20 // Zero Gravity - Round: 1/20 \n :flag_us: `74.91.127.206:28960` \n • zG| ProMod 2.16 // Zero Gravity \n :flag_us: `74.91.127.206:28963` \n • zG| CoDJumper // Zero Gravity \n :flag_us: `74.91.127.206:28964` \n \n Teamspeak 3: \n :flag_us: `	74.91.127.206:9987`", "color": 53380 }});
   	}
     if (message.content.startsWith(prefix + 'about')) {
-    message.channel.send({embed: { "plainText": "", "title": "About TeamCo7 Clan Bot", "description": "Hi! I\'m a bot that\'s serving: \n • TeamCo7 Clan members \n • Allied clans or communities", "color": 53380 }});
+    message.channel.send({embed: { "plainText": "", "title": "About zG| & Discord bot", "description": "Zero Gravity Gaming was founded by zG| NeRy & zG| Thief in 2013 \n Becoming one of the most famous clans in COD4:MW history \n Currently zG|NeRy is the Main-Owner & Administartor \n Website: https://zg-gaming.co/", "color": 53380 }});
     }
 
 });
