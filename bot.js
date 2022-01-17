@@ -4,9 +4,9 @@ const client = new Discord.Client();
 var prefix = "!zg"
 
 client.on('ready', () => {
-  console.log('Robot is ready to operate!');
-  console.log(`Robot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`!zg help | zg-gaming.co for ${client.users.size} users`);
+  console.log('Robot is ready to operate! You can now test the commands.');
+  console.log(`Discord Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds/servers.`);
+  client.user.setActivity(`!zg help | zg-gaming.co`);
 });
 
 client.on('message', async msg => {
