@@ -9,6 +9,13 @@ client.on('ready', () => {
   client.user.setActivity(`!zg help | zg-gaming.co`);
 });
 
+client.on('message', async msg => {
+    const args = msg.content.slice(prefix.length).trim().split(/ +/g);
+    var argresult = args.join(' ');
+
+    if(msg.author.bot) return;
+  
+
 client.on('message', message => {
   if (message.author === client.user) return;
   	if (message.content.startsWith(prefix + 'help')) {
