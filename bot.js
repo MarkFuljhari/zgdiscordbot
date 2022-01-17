@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var prefix = "!"
+var prefix = "!zg"
 
 client.on('ready', () => {
   console.log('Robot is ready to operate!');
   console.log(`Robot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.user.setActivity(`!help | ${client.users.size} users`);
+  client.user.setActivity(`!zg help | zg-gaming.co for ${client.users.size} users`);
 });
 
 client.on('message', async msg => {
