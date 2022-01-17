@@ -4,7 +4,8 @@ const client = new Discord.Client();
 var prefix = "!zg "
 
 client.on('ready',() => {
-  console.log("I\'m Online! Ready to launch!");
+ console.log('Robot is ready to operate!');
+  console.log(`Robot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   client.user.setActivity('!zg help | zg-gaming.co', { type: 'WATCHING' })
     .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : '!zg help | zg-gaming.co'}`))
     .catch(console.error);
