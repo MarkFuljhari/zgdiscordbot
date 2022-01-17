@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var prefix = "!"
+var prefix = "zg!"
 
 client.on('ready', () => {
   console.log('Robot is ready to operate!');
