@@ -1,21 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var prefix = "!zg"
+var prefix = "!zg "
 
-client.on('ready', () => {
-  console.log('Robot is ready to operate! You can now test the commands.');
-  console.log(`Discord Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds/servers.`);
-  client.user.setActivity(`!zg help | zg-gaming.co`);
-});
+client.on('ready',() => {
+  console.log("I\'m Online! Ready to launch!");
+  console.log(`Robot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.
+  client.user.setActivity('!zg help | zg-gaming.co', { type: 'PLAYING' })
+    .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : '!zg help | zG|'}`))
+    .catch(console.error);
+})
 
-client.on('message', async msg => {
-    const args = msg.content.slice(prefix.length).trim().split(/ +/g);
-    var argresult = args.join(' ');
-
-    if(msg.author.bot) return; //This here means that if message was sent from the other bots EXEPT Akelli, our bot (Akelli) won't sent anything in the chat (thats why return there is e.g return, returns you to somewhere or something) this prevents bot-ception (when multiple bots were to use the same prefix).
-
-  //// COMMANDS
 client.on('message', message => {
   if (message.author === client.user) return;
   	if (message.content.startsWith(prefix + 'help')) {
