@@ -12,9 +12,6 @@ client.on('ready',() => {
     .catch(console.error);
 })
 
-client.on('message', message => {
-  if (message.author === client.user) return;
- 
  // COMMANDS
 client.on('message', message => {
   if (message.author === client.user) return;
